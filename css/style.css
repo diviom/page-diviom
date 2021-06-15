@@ -1,0 +1,265 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.main{
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./../asset/img/background.png);
+    max-width: 100%;
+    max-height: 100%;
+    background-repeat: no-repeat;
+}
+
+.error{
+    color:crimson;
+}
+
+.menu-bar{
+   display: none;
+}
+
+.brand{
+    height: 100%;
+    width: 50px;
+}
+
+.logo{
+   height: 50px;
+   width: 100px;
+   
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    padding:  30px;
+    box-shadow: 2px 2px 15px 0px rgba( 0, 0, 0 ,.42);
+}
+
+.navbar .menu{
+    grid-column: 6 / 9 ;
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a{
+   text-decoration: none;
+   margin-right: 3em;
+   font-size: 1.3em;
+   color: #ffff;
+   font-weight: 200;
+   padding: 10 px 20px;
+}
+.menu li a:hover{
+  border-radius: 7px;
+  color: black;
+  transition: all .30s ;
+}
+.main{
+
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    justify-content: space-between;
+}
+
+.cont-img{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.arte {
+    width: 80%;
+}
+
+.cont-form{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 100%;
+    border-radius: 18px !important;
+}
+
+.contact-text{
+    border-radius: 18px !important;
+}
+
+h1,h2,h4{
+    color : white
+}
+
+.modal-container{
+    background-color: rgb(0, 0, 0, 0.3);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal-ts{
+    background-color: #ffffff;
+    height: 50%;
+    width: 50%;
+    position: relative;
+    margin-top: -2px;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    border-radius: 80px;
+    text-align: center;
+}
+
+
+
+.img-corect{
+    width:  100px;
+    height: 100px;
+}
+@media only screen and (max-width: 600px){
+    
+    .main{
+        background-color: #72ccd4;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(./../asset/img/background-phone.svg);
+    
+        max-height: 100%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    
+    .navbar{
+        height: 80px;
+        box-shadow: 2px 2px 15px 0px rgba( 0, 0, 0 ,.42);
+        align-items: center;
+        
+    }
+
+
+    .navbar .menu{
+        background-color: #00afbf;
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        top: 60px;
+        height: 55vh;
+        left: -1em;
+        transform: translateY(6%);
+        transition: all 1s;
+        box-shadow: 2px 2px 15px 0px rgba( 0, 0, 0 ,.42);
+    }
+
+    .menu-toggle{
+        transform: translateY(-120%);
+        transition: all 0.15s;
+        background-color: #00afbf;
+        display: flex;
+        flex-direction: column;
+        display: block;
+        position:absolute;
+        top: 60px;
+        height: 50vh;
+        left: -1em;
+    }
+    
+   
+
+    
+    .menu li{
+        margin-top: 3em ;
+    }
+    
+    .navbar .menu-bar {
+       display: block;
+       font-size: 2em;
+       color:  white;
+       cursor: pointer;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cont-img{
+        
+        width: 100%;
+        height: 25vh;
+       
+    }
+    
+    .arte {
+        height: 70% ;
+        width: 40%;
+    }
+    
+
+    .cont-form{
+        display: flex;
+        width: 100%;
+        height: 50%;
+       
+    }
+
+    .btn{
+        width: 100%;
+        border-radius: 18px !important;
+    }
+
+    .contact-text{
+        border-radius: 18px !important;
+    }
+
+    h1,h2,h4{
+        color : white
+    }
+
+    h2{
+        font-size: 22px !important;
+    }
+
+    h4{
+        font-size: 14px !important;
+    }
+
+    
+   
+}

@@ -1,0 +1,107 @@
+
+@media only screen and (max-width: 600px){
+    
+    .main-respon{
+        background-color: rgb(255, 255, 255);
+        width: 100vw;
+        height: 100vh;
+        background-image: url(./../asset/img/background-phone.svg);
+        max-width: 100%;
+        max-height: 100%;
+        background-repeat: no-repeat;
+    }
+    
+    .navbar{
+        height: 80px;
+        box-shadow: 2px 2px 15px 0px rgba( 0, 0, 0 ,.42);
+        align-items: center;
+        
+    }
+
+
+    .navbar .menu{
+        background-color: #00afbf;
+        display: flex;
+        flex-direction: column;
+        position:absolute;
+        top: 60px;
+        height: 55vh;
+        left: -1em;
+        transform: translateY(6%);
+        transition: all 1s;
+        box-shadow: 2px 2px 15px 0px rgba( 0, 0, 0 ,.42);
+    }
+
+    .menu-toggle{
+        transform: translateY(-120%);
+        transition: all 0.15s;
+        background-color: #00afbf;
+        display: flex;
+        flex-direction: column;
+        display: block;
+        position:absolute;
+        top: 60px;
+        height: 50vh;
+        left: -1em;
+    }
+    
+   
+
+    
+    .menu li{
+        margin-top: 3em ;
+    }
+    
+    .navbar .menu-bar {
+       display: block;
+       font-size: 2em;
+       color:  white;
+       cursor: pointer;
+    }
+
+    .container{
+        display: flex;
+        width: 100%;
+        height: 95%;
+        flex-direction: row-reverse;
+       
+
+    }
+
+    
+    .cont-img{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .arte {
+        width: 80%;
+    }
+
+    .cont-form{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn{
+        width: 100%;
+        border-radius: 18px !important;
+    }
+
+    .contact-text{
+        border-radius: 18px !important;
+    }
+
+    h1,h2,h4{
+        color : white
+    }
+
+    
+   
+}
