@@ -154,14 +154,13 @@ h1,h2,h4{
 @media only screen and (max-width: 600px){
     
     .main{
-        background-color: #72ccd4;
+        background-color: rgb(255, 255, 255);
         width: 100vw;
         height: 100vh;
-        background-image: url(./../asset/img/background-phone.svg);
-    
+        background-image: url(./../asset/img/background.png);
+       
         max-height: 100%;
         background-repeat: no-repeat;
-        overflow: hidden;
     }
     
     .navbar{
@@ -217,10 +216,13 @@ h1,h2,h4{
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        height: 80%;
     }
+    
 
     .cont-img{
-        
+        opacity: 0; 
         width: 100%;
         height: 25vh;
        
